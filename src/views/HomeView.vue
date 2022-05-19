@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="text-secondary">
     <HelloWorld/>
   </div>
 </template>

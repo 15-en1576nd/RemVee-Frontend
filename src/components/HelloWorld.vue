@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="text-secondary">
   <div class="flex justify-center mt-48">
     <div class="text-left">
       <h1 class="text-5xl font-semibold">RemVee</h1>
