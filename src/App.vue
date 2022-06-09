@@ -9,6 +9,7 @@
     <div class="flex flex-row justify-end float-right w-3/4 text-right text-secondary">
         <router-link class="w-1/12 mx-2 font-semibold text-center bg-white border-2 rounded-md border-secondary" to="/">Home</router-link>
         <router-link class="w-1/12 mx-2 font-semibold text-center bg-white border-2 rounded-md border-secondary" to="/dashboard">Dashboard</router-link>
+        <router-link class="w-1/12 mx-2 font-semibold text-center bg-white border-2 rounded-md border-secondary" to="/login">Login</router-link>
     </div>
   </div>
   <router-view/>
