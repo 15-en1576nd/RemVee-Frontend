@@ -14,11 +14,6 @@
                 </div>
                 <form action="" method="POST">
                     <div class="flex flex-col mb-2 justify-evenly">
-                        <!-- <div class="flex flex-row">
-                            <label for="tv-name" class="m-0 text-sm font-medium">TV Name:
-                                <input type="text" v-model="item.name" id="tv-name" class="flex justify-end p-[2px] focus-visible:outline-none mt-[2px] font-semibold  bg-transparent border-2 border-b-secondary rounded-md w-70" placeholder="TV Name">
-                            </label>
-                        </div> -->
                         <div class="text-gray-700 md:flex md:items-center">
                             <div class="mb-1 md:mb-0">
                                 <p class="m-0 text-sm font-medium">TV Name:</p>
