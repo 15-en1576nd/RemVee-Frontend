@@ -42,8 +42,8 @@
                                 <p class="m-0 text-sm font-medium">Ip adress:</p>
                             </div>
                             <div class="text-right md:flex-grow">
-                                <input v-show="item.isShow" class="p-[2px] mt-[2px] font-semibold bg-transparent border-2 focus-visible:outline-none border-b-secondary rounded-md w-70" :value="item.ipadress" type="text" placeholder="Ipadress" aria-labelledby="Ipadress">
-                                <p v-show="!item.isShow" class="text-lg text-right mt-[2px] p-[2px]">Ipadress</p>
+                                <input v-show="item.isShow" class="p-[2px] mt-[2px] font-semibold bg-transparent border-2 focus-visible:outline-none border-b-secondary rounded-md w-70" :value="item.ipaddress" type="text" placeholder="Ipadress" aria-labelledby="Ipadress">
+                                <p v-show="!item.isShow" class="text-lg text-right mt-[2px] p-[2px]">{{item.ipaddress}}</p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,6 @@ export default {
   },
   async mounted() {
     const result = await axios.get('http://localhost:3000/api/tv');
-    console.warn(result);
     // convert the result to json
     this.list = result.data.list;
   },
