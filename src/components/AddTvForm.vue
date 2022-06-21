@@ -5,10 +5,10 @@
           <div class="w-full p-5 text-left">
             <h1 class="mb-2 text-5xl font-medium text-center">Add TV</h1>
               <div class="bg-primary" v-if="isSuccess">
-                <h1 class="m-2 text-lg text-center text-white">TV Succesfull add</h1>
+                <h1 class="m-2 text-lg text-center text-white">TV added succesfully</h1>
               </div>
               <div class="bg-quaternary" v-if="isFail">
-                <h1 class="m-2 text-lg text-center text-white">TV was not added</h1>
+                <h1 class="m-2 text-lg text-center text-white">An error occurred: TV not added</h1>
               </div>
                 <div class="flex flex-row justify-evenly">
                     <div class="flex flex-col mx-1 mb-3 sm:mx-5">
