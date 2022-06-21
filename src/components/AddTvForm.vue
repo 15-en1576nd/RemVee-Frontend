@@ -13,7 +13,7 @@
                 <div class="flex flex-row justify-evenly">
                     <div class="flex flex-col mx-1 mb-3 sm:mx-5">
                         <label for="name" class="text-sm font-medium">TV Name:<br>
-                        <input v-model="name" type="text" id="name" class="p-2 mt-[2px] font-semibold border-2 border-secondary rounded-md w-96" placeholder="TV Name">
+                        <input v-model="name" type="text" class="p-2 mt-[2px] font-semibold border-2 border-secondary rounded-md w-96" placeholder="TV Name">
                         </label>
                     </div>
                     <div class="flex flex-col mx-1 mb-3 sm:mx-5">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="flex flex-col mx-1 mb-3 sm:mx-5">
                         <label for="ipaddress" class="text-sm font-medium">Ip adress:<br>
-                        <input v-model="ipaddress" type="text" id="ipaddress" class="p-2 mt-[2px] font-semibold border-2 border-secondary rounded-md w-96" placeholder="Ip adress">
+                        <input v-model="ipaddress" type="text" class="p-2 mt-[2px] font-semibold border-2 border-secondary rounded-md w-96" placeholder="Ip adress">
                         </label>
                     </div>
                 </div>
