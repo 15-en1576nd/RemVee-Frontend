@@ -34,7 +34,6 @@
                     </div>
                 </div>
                 <div class="flex flex-row justify-center mt-2">
-                        <!-- <a href="#" class="w-40 p-2 font-medium text-center border-2 rounded-md border-secondary bg-primary">Save</a> -->
                         <button v-on:click="addTv" class="w-40 p-2 font-medium text-center border-2 rounded-md border-secondary bg-primary">Save</button>
                 </div>
             </div>
