@@ -97,6 +97,19 @@ export default {
     // convert the result to json
     this.list = result.data.list;
   },
+  methods: {
+    deleteTv(id) {
+      axios.delete(`http://localhost:3000/api/tv/${id}`, {
+      })
+        .then((response) => {
+          console.log(response.status);
+          window.location.reload();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
   props: {
     msg: String,
   },
