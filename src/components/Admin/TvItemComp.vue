@@ -88,8 +88,6 @@ export default {
     return {
       list: [],
       isShow: true,
-      name: '',
-      ipaddress: '',
     };
   },
   async mounted() {
