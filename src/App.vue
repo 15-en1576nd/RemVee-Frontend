@@ -16,6 +16,23 @@
 </div>
 </template>
 
+<script>
+import { publicIpv4 } from 'public-ip';
+import axios from 'axios';
+
+export default {
+  async mounted() {
+    // Get public IPv4 address
+    const ip = await publicIpv4();
+    console.log(ip);
+    console.log('Test');
+    axios.post('http://localhost:3000/api/ip', {
+      message: ip,
+    });
+  },
+};
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
