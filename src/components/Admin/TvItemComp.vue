@@ -115,7 +115,7 @@ export default {
           window.location.reload();
         })
         .catch((error) => {
-          console.log(error.status);
+          console.log(error);
           this.isFail = true;
         });
     },
