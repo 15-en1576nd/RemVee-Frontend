@@ -1,8 +1,17 @@
 <!-- eslint-disable max-len -->
 <template>
-    <div class="flex justify-center mt-10 text-secondary">
-        <div class="flex flex-row flex-wrap items-center justify-between py-3 rounded-md min-w-[25rem] max-w-[90rem] mx-[2rem] bg-gray-200">
-        <div v-for="item in list" :key='item' class="flex flex-col mx-5 my-2">
+    <div class="justify-center mt-10 text-secondary">
+        <div class="justify-center rounded-md bg-primary" v-if="isSuccess">
+                <h1 class="m-2 text-lg text-center text-white">TV successfully updated</h1>
+        </div>
+        <div class="justify-center rounded-md bg-quaternary" v-if="isFail">
+                <h1 class="m-2 text-lg text-center text-white">An error occurred: TV {{name}} not updated</h1>
+        </div>
+        <div class="flex flex-row flex-wrap items-center justify-center py-3 rounded-md mx-[2rem] bg-gray-200">
+        <div v-if="!list.length" class="w-full text-center">
+            <p class="flex justify-center font-semibold text-center">There are no TVs</p>
+        </div>
+        <div v-else v-for="item in list" :key='item' class="flex flex-col mx-5 my-2">
             <div class="flex flex-col justify-center w-[24rem] h-60 p-2 bg-gray-200 rounded-md drop-shadow-md border-2 border-primary">
                 <div class="flex flex-row items-center">
                     <div class="flex items-center justify-center w-20 h-20 rounded-full bg-primary">
@@ -88,6 +97,8 @@ export default {
     return {
       list: [],
       isShow: true,
+      isFail: false,
+      isSuccess: false,
     };
   },
   async mounted() {
@@ -105,6 +116,7 @@ export default {
         })
         .catch((error) => {
           console.log(error);
+          this.isFail = true;
         });
     },
     updateTv(id) {

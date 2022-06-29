@@ -13,7 +13,7 @@
         </div>
       <div class="flex flex-col">
         <AddTvForm class="mt-10" />
-        <TvItemComp class="flex justify-center"/>
+        <TvItemComp/>
       </div>
     </div>
   </div>
