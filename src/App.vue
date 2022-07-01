@@ -1,6 +1,5 @@
 <template>
 <div class="text-secondary">
-<link rel="stylesheet" href="/css/">
 <!-- eslint-disable max-len -->
   <div class="flex flex-row items-center p-2 bg-primary">
     <div class="flex w-1/4">
