@@ -10,6 +10,9 @@
         <router-link class="w-1/12 mx-2 font-semibold text-center bg-white border-2 rounded-md border-secondary" to="/dashboard">Dashboard</router-link>
     </div>
   </div>
+    <div class="flex flex-row justify-center m-1 rounded-md bg-quaternary">
+      <h1 class="p-1 text-lg font-medium text-white">You're not allowed to Remvee, because you're not on the right network.</h1>
+    </div>
   <router-view/>
 <!-- eslint-enable max-len -->
 </div>
