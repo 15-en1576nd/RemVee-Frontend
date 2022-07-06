@@ -34,6 +34,19 @@ export default {
       list: [],
     };
   },
+  methods: {
+    async toggleTv(ip) {
+      const TvIp = ip;
+      const body = { command: 'TvPower', ipaddress: TvIp };
+      const headers = { 'Content-Type': 'application/json' };
+      await axios.post('http://localhost:3000/api/tv/command', body, headers)
+        .then((response) => {
+          this.response = response.data;
+          console.log(this.getStatusTv(TvIp));
+        }).catch((error) => {
+          console.log(error);
+        });
+    },
   async mounted() {
     const result = await axios.get('http://localhost:3000/api/tv');
     console.warn(result);
