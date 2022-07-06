@@ -17,7 +17,9 @@
           <h1 class="mx-2 text-2xl font-medium">{{ item.name }}</h1>
         </div>
         <div class="flex justify-end w-1/5 items-right">
+          <button v-on:click="toggleTv(item.ipaddress)">
           <svg xmlns="http://www.w3.org/2000/svg" class="justify-end w-20 h-20 p-4 rounded-full bg-primary" viewBox="0 0 32.25 32.771"><path id="Icon_awesome-power-off" data-name="Icon awesome-power-off" d="M26.051,3.518a16.123,16.123,0,1,1-18.739.007,1.565,1.565,0,0,1,2.276.5l1.027,1.827a1.56,1.56,0,0,1-.429,2.016,10.923,10.923,0,1,0,13-.007,1.551,1.551,0,0,1-.423-2.009l1.027-1.827a1.559,1.559,0,0,1,2.263-.507ZM19.289,17.166V1.561A1.557,1.557,0,0,0,17.728,0H15.647a1.557,1.557,0,0,0-1.561,1.561V17.166a1.557,1.557,0,0,0,1.561,1.561h2.081A1.557,1.557,0,0,0,19.289,17.166Z" transform="translate(-0.562)" fill="#34495e"/></svg>
+          </button>
         </div>
       </div>
     </div>
